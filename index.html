@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font for the header from Google-->
+    @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <h1>re(flex)</h1>
+        <h1 id="logo">re(flex)</h1>
     </header>
     <section class="game-area">
-        game-area
+        <div id="welcome">
+            Welcome to the game re(flex)!
+            Have you ever thought about the fact that it is harder to let go of things than grabbing onto them?
+            In this game, you will be challenged to let go of the key you've pressed down once the counter comes to the
+            goal.
+            Press and hold down any key to begin... Remember to let go in the right time.
+        </div>
+        <div id="goal">
+            the goal will be displayed here in seconds with three decimals
+        </div>
+        <div id="counter">
+            the counter will go from 0,000 seconds up to 15,000 seconds before it automatically stops unless the user
+            has released the key earlier
+        </div>
+
     </section>
-    <footer>
-        footer
+    <footer id="results">
+        results will be displayed here as well as a button to reset the game
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
