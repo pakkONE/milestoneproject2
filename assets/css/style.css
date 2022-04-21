@@ -44,6 +44,7 @@ body {
 #goal {
     background-color: #B1BDC5;
     width: 40%;
+    margin: auto;
     text-align: center;
     line-height: 2.5vh;
     padding: 10px;
@@ -54,6 +55,7 @@ body {
 #counter {
     background-color: #B1BDC5;
     width: 40%;
+    margin: auto;
     text-align: center;
     line-height: 2.5vh;
     padding: 10px;
@@ -67,8 +69,8 @@ body {
 }
 
 #timegoal, #timecounter {
-    font-size: 5rem;
-    margin: 5px 10px;
+    font-size: 3.5vw;
+    margin: .75vw;
 }
 
 #results {
@@ -78,5 +80,6 @@ body {
 }
 
 footer {
-    margin: auto;
+    text-align: center;
+    margin: 20px;
 }
