@@ -85,7 +85,20 @@ body {
     border-radius: 10px;
 }
 
-#resetbutton {}
+#resetmessage {
+    font-size: 1.3vw;
+}
+
+#resetbutton {
+    border: 3px groove #5E5E5E;
+    background-color: #DADDE2;
+    padding: 0.25rem 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 10px;
+}
 
 footer {
     font-size: 1.5vw;
