@@ -38,7 +38,7 @@ body {
 #welcome {
     text-align: center;
     line-height: 3vh;
-    padding: 10px;
+    padding: 1rem;
 }
 
 #goal {
@@ -47,7 +47,7 @@ body {
     margin: auto;
     text-align: center;
     line-height: 3vh;
-    padding: 10px;
+    padding: 1rem;
     border: 3px groove #5E5E5E;
     border-radius: 10px;
 }
@@ -58,7 +58,7 @@ body {
     margin: auto;
     text-align: center;
     line-height: 3vh;
-    padding: 10px;
+    padding: 1rem;
     border: 3px groove #5E5E5E;
     border-radius: 10px;
 }
@@ -79,9 +79,13 @@ body {
     margin: auto;
     text-align: center;
     line-height: 3vh;
-    padding: 10px;
+    padding: 1rem;
     border: 3px groove #5E5E5E;
     border-radius: 10px;
+}
+
+#resetbutton {
+    
 }
 
 footer {
