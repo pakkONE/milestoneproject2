@@ -1,4 +1,59 @@
+/* Some general styling for the body, header and footer elements */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+body,
+footer {
+    background-color: #F5F5F5;
+}
+
 body {
     font-family: 'Dongle', sans-serif;
-    font-size: 180%;
+    font-size: 2vw;
+}
+
+/* Styling of logo */
+
+.logo {
+    text-align: center;
+    font-size: 2.5vw;
+    margin: auto;
+}
+
+/* Styling of Game Area */
+
+.game-area {
+    background-color: #D5D5D5;
+    width: 50%;
+    margin: auto;
+    border: 3px groove #909090;
+    border-radius: 10px;
+}
+
+#welcome {
+    line-height: 2.5vh;
+    padding: 10px;
+}
+
+#goal {
+    line-height: 2.5vh;
+    padding: 10px;
+}
+
+#counter {
+    line-height: 2.5vh;
+    padding: 10px;
+}
+
+#results {
+    line-height: 2.5vh;
+    padding: 10px;
+}
+
+footer {
+    
 }
