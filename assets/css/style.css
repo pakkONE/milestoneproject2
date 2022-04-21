@@ -8,7 +8,7 @@
 header,
 body,
 footer {
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
 }
 
 body {
@@ -27,33 +27,56 @@ body {
 /* Styling of Game Area */
 
 .game-area {
-    background-color: #D5D5D5;
+    background-color: #DADDE2;
     width: 50%;
     margin: auto;
-    border: 3px groove #909090;
+    border: 3px groove #5E5E5E;
     border-radius: 10px;
+    padding: 20px;
 }
 
 #welcome {
+    text-align: center;
     line-height: 2.5vh;
     padding: 10px;
 }
 
 #goal {
+    background-color: #B1BDC5;
+    width: 40%;
+    text-align: center;
     line-height: 2.5vh;
     padding: 10px;
+    border: 3px groove #5E5E5E;
+    border-radius: 10px;
 }
 
 #counter {
+    background-color: #B1BDC5;
+    width: 40%;
+    text-align: center;
     line-height: 2.5vh;
     padding: 10px;
+    border: 3px groove #5E5E5E;
+    border-radius: 10px;
+}
+
+#remember {
+    font-size: 1.3vw;
+    color: #900000;
+}
+
+#timegoal, #timecounter {
+    font-size: 5rem;
+    margin: 5px 10px;
 }
 
 #results {
+    text-align: center;
     line-height: 2.5vh;
     padding: 10px;
 }
 
 footer {
-    
+    margin: auto;
 }

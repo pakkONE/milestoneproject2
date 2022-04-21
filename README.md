@@ -1,4 +1,4 @@
-# Re(flex)
+# Re(flex) - Flex your reflexes
 Re(flex) is a game that will test the users reflexes, but not in the conventional way. We are used to waiting for red light to turn green to press a button to measure our reflexes, but this game will measure your reflexes to let go of a key at a specified time. There is something psychologically different to pressing a key at a specified time versus letting go of a key at a specified time. 
 
 This game will be for adults and children alike, and it will provide a fun game that helps your sharpen your reflexes (or flex them) to your family, friends and colleagues.
@@ -29,6 +29,16 @@ This game will be for adults and children alike, and it will provide a fun game 
 
 ### ___Future Features___
 - In the future I would like to add sound effects to the game to make it more fun.
+
+## UX
+<hr>
+
+### __User Stories__
+ - As as user, I would like to play a game.
+ - As a user, I would like to test my reflexes.
+ - As a user, I would like to reset the game.
+ - As a user, I would like to contact the developer when something is not working.
+
 
 ## Testing
 <hr>
