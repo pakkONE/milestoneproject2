@@ -39,6 +39,17 @@ This game will be for adults and children alike, and it will provide a fun game 
  - As a user, I would like to reset the game.
  - As a user, I would like to contact the developer when something is not working.
 
+## Design
+<hr>
+
+### __Fonts__
+ - I used [Google Fonts](https://fonts.google.com/) for finding a fun font.
+
+### __Colour schema__
+ - I used [ColorSpace](https://mycolor.space/?hex=%23FFFFFF&sub=1) for finding a good looking colour palette to #FFFFFF.
+
+### __Icons__
+ - I used [Font Awesome](https://fontawesome.com/) to get a nice Facebook icon to the footer.
 
 ## Testing
 <hr>
