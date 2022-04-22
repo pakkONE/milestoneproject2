@@ -105,3 +105,82 @@ footer {
     text-align: center;
     margin: 20px;
 }
+
+/* Media queries for responsive design on screens with smaller width than 940px */
+
+@media only screen and (max-width: 1080px) {
+    body {
+        font-size: 3vw;
+    }
+
+    .game-area {
+        width: 60%;
+        padding: 12.5px;
+    }
+
+    #welcome {
+        text-align: center;
+        width: 90%;
+        padding: .5rem 2rem;
+    }
+
+    #goal,
+    #counter,
+    #results {
+        width: 45%;
+    }
+
+    #timecounter,
+    #timegoal {
+        font-size: 7.5vw;
+        margin: 0.45vw;
+    }
+
+    #remember,
+    #resetmessage {
+        font-size: 2vw;
+    }
+}
+
+/* Media queries for responsive design on screens with smaller width than 940px */
+
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 3.5vw;
+    }
+
+    .game-area {
+        width: 60%;
+        padding: 5px;
+    }
+
+    #welcome {
+        text-align: center;
+        width: 90%;
+        padding: .25rem 1.25rem;
+    }
+
+    #goal,
+    #counter,
+    #results {
+        font-size: 5vw;
+        width: 70%;
+        text-align: center;
+        padding: .5rem;
+    }
+
+    #timecounter,
+    #timegoal {
+        font-size: 7.5vw;
+        margin: 0.45vw;
+    }
+
+    #remember,
+    #resetmessage {
+        font-size: 3.5vw;
+    }
+
+    #resetbutton {
+        font-size: 2vw;
+    }
+}

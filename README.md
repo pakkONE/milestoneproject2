@@ -55,3 +55,26 @@ This game will be for adults and children alike, and it will provide a fun game 
 <hr>
 
 ###
+
+## Credits
+<hr>
+
+#### runTimer
+- ```function countUp() {
+  var i = 0; // a counter which is displayed every 100ms
+
+   // create interval which fires the callback every 100ms.
+   // `interval` holds the interval ID, which is later used to clear the
+   // interval (stop calling the callback)
+  var interval = setInterval(function() { 
+
+    text.innerHTML = i++; // write `i` and increment
+    
+    // if `i` is grater than 100 then clear the interval (stop calling the callback)
+    if (i > 100) clearInterval(interval);
+  }, 100);
+}
+```
+
+countUp();
+- Borrowed from user @ Stack Overflow [Sebastian Kaczmarek](https://stackoverflow.com/a/58652144)
