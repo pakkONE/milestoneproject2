@@ -18,9 +18,6 @@ This game will be for adults and children alike, and it will provide a fun game 
    - Once the user has released the key, the result is logged and a new randomly generated goal will be shown.
    - Dependant of the result (a margin of 0,2 seconds) will display the counter with a green background if user succeeds or a red background if the user doesn't succeed.
 
- - #### __Scores__
-   - Here the users previous scores will be shown, in green if they were successful, in red if they were unsuccessful.
-
  - #### __Reset game button__
    - At the bottom of the game area there will be a button to click on if the user would like to reset the game.
 
@@ -59,8 +56,8 @@ This game will be for adults and children alike, and it will provide a fun game 
 ## Credits
 <hr>
 
-#### runTimer
-- ```function countUp() {
+#### function runTimer
+- ```function runTimer() {
   var i = 0; // a counter which is displayed every 100ms
 
    // create interval which fires the callback every 100ms.
@@ -73,8 +70,6 @@ This game will be for adults and children alike, and it will provide a fun game 
     // if `i` is grater than 100 then clear the interval (stop calling the callback)
     if (i > 100) clearInterval(interval);
   }, 100);
-}
-```
 
-countUp();
+
 - Borrowed from user @ Stack Overflow [Sebastian Kaczmarek](https://stackoverflow.com/a/58652144)
