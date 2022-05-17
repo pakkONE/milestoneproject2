@@ -9,23 +9,28 @@ This game will be for adults and children alike, and it will provide a fun game 
 ### ___Existing Features___
  - #### __Header__
    - The header will be placed up top of the page and aligned to center. Re(flex) will be displayed with a fun font.
-   - The name of the game reveals that it has to do with reflexes, and your chance to flexing them to others.
+   - The name of the game reveals that it has to do with reflexes, and your chance to flexing them to others.<br>
+   ![Screenshot of the header](assets/images/header.png)
 
  - #### __Game Area__
    - This section will have a different colored background and contain the game itself.
    - It will provide a random number that is the goal of the game.
    - The counter will start as the user presses down a key and will stop once the user releases the key.
    - Once the user has released the key, the result is logged and a new randomly generated goal will be shown.
-   - Dependant of the result (a margin of 0,2 seconds) will display the counter with a green background if user succeeds or a red background if the user doesn't succeed.
+   - Dependant of the result (a margin of 0,2 seconds) will display the counter with a green background if user succeeds or a red background if the user doesn't succeed.<br>
+   ![Screenshot of the game area](assets/images/game_area.png)
 
  - #### __Reset game button__
-   - At the bottom of the game area there will be a button to click on if the user would like to reset the game.
+   - At the bottom of the game area there will be a button to click on if the user would like to reset the game.<br>
+   ![Screenshot of the reset game button](assets/images/reset_button.png)
 
  - #### __Footer__
-   - A footer will be fixed on the bottom displaying the rules of the game in short sentences.
+   - A footer will be fixed on the bottom displaying the rules of the game in short sentences.<br>
+   ![Screenshot of the footer section](assets/images/footer.png)
 
 ### ___Future Features___
 - In the future I would like to add sound effects to the game to make it more fun.
+- I would also like to add the ability to make a leaderboard that users can opt into and save their best score to compete against other players.
 
 ## UX
 <hr>
@@ -48,10 +53,43 @@ This game will be for adults and children alike, and it will provide a fun game 
 ### __Icons__
  - I used [Font Awesome](https://fontawesome.com/) to get a nice Facebook icon to the footer.
 
+## Wireframes
+<hr>
+
+### __Desktop__
+![The wireframe for desktop version](assets/images/Desktop.png)
+
+### __Tablet__
+![The wireframe for tablet version](assets/images/Tablet.png)
+
+### __Phone__
+![The wireframe for phone version](assets/images/Phone.png)
+
+## Technology
+<hr>
+
+
+
+
 ## Testing
 <hr>
 
-###
+### __Code validation__
+
+### __Test cases__
+
+### __Fixed bugs__
+
+### __Supported screens and browsers__
+
+## Deployment
+<hr>
+
+### __Via GitPod__
+
+
+### __Via GitHub Pages__
+
 
 ## Credits
 <hr>
