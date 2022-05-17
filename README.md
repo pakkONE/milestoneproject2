@@ -1,7 +1,8 @@
 # Re(flex) - Flex your reflexes
 Re(flex) is a game that will test the users reflexes, but not in the conventional way. We are used to waiting for red light to turn green to press a button to measure our reflexes, but this game will measure your reflexes to let go of a key at a specified time. There is something psychologically different to pressing a key at a specified time versus letting go of a key at a specified time. 
 
-This game will be for adults and children alike, and it will provide a fun game that helps sharpen your reflexes (and possibly flex them) to your family, friends and colleagues.
+This game will be for adults and children alike, and it will provide a fun game that helps sharpen your reflexes (and possibly flex them) to your family, friends and colleagues.<br>
+![This is an image of mockup of the responsive design](assets/images/responsive_mockup.png)
 
 ## Features
 <hr>
@@ -68,13 +69,22 @@ This game will be for adults and children alike, and it will provide a fun game 
 ## Technology
 <hr>
 
+### __GitHub__
+- GitHub is where the code is stored and the site was hosted.
 
-
+### __GitPod__
+- GitPod is the developer environment in the cloud.
 
 ## Testing
 <hr>
 
 ### __Code validation__
+- HTML validator<br>
+
+![Results of html validation](assets/images/html_validator.png)
+- CSS validator<br>
+
+![Results of css validation](assets/images/css_validator.png)
 
 ### __Test cases__
 
@@ -86,10 +96,20 @@ This game will be for adults and children alike, and it will provide a fun game 
 <hr>
 
 ### __Via GitPod__
-
+- GitPod was used as the environment for development. These are the steps to set it up:
+  - I used Code Institute Python Essentials template (https://github.com/Code-Institute-Org/python-essentials-template)
+  - Click Use this template.
+  - GitPod will now set up the environment for you with all addons/shortcuts needed.'
+  - To run the program in GitPod what you have to do is type in python3 run.py in the terminal.
 
 ### __Via GitHub Pages__
+- The site was deployed to GitHub Pages. These are the steps to make it happen:
+  - Go to the relevant repository, then click Settings.
+  - Click on Pages on the left column.
+  - Under source, pick main and also make sure that /root is selected. Click Save.
+  - The site will then be deployed within 10-15 minutes and the link should be shown above the Source section.
 
+Find my site here: https://pakkone.github.io/milestoneproject2/
 
 ## Credits
 <hr>
