@@ -1,11 +1,10 @@
 // Global variables
 
+let goal = 0;
+
+let elapsedTime = 0;
+
 let spaceBarIsDown = false;
-let timer = {
-    i: 0,
-    seconds: 0,
-    milli: 0
-};
 
 // event listeners
 
@@ -20,70 +19,70 @@ document.addEventListener('keydown',
 
 document.addEventListener('keyup', spaceBarUp);
 
+// Functions
 
 function setGoal() {
-    const goal = getRandomNumber();
+    goal = getNewGoal();
     let timeGoal = document.getElementById("timegoal");
     timeGoal.innerHTML = goal;
 }
 
 
-function getRandomNumber() {
+function getNewGoal() {
     return Math.floor((Math.random() * (12 - 4) + 4) * 1000) / 1000;
 }
 
 function spaceBarDown(event) {
     if (event.code === 'Space') {
-        if (spaceBarIsDown == true) {
-            return;
-        } else {
-            spaceBarIsDown = true;
-            runTimer();
-        }
+        spaceBarIsDown = true;
+        startGame();
     }
 }
 
 function spaceBarUp(event) {
     if (event.code === 'Space') {
-        if (spaceBarIsDown == true) {
-            spaceBarIsDown = false;
-        }
-        console.log('spacebar is up!')
-    } else {
+        spaceBarIsDown = false;
+        stopGame();
+    }
+    event.preventDefault(); // Do not trigger new game when "New Game" button is in focus and space key down
+}
 
+function startGame() {
+    const d = new Date();
+    let start = d.getTime();
+    const display = document.getElementById("timecounter");
+    let interval = setInterval(updateTimer, 1);
+
+    function updateTimer() {
+        const now = new Date();
+        elapsedTime = ((now.getTime() - start) / 1000).toFixed(3);
+        display.innerHTML = elapsedTime;
+
+        if (elapsedTime > 15 || !spaceBarIsDown) {
+            clearInterval(interval);
+        }
     }
 }
 
-function runTimer() {
-    display = document.getElementById("timecounter");
-
-    // borrwed following piece of code from https://codepen.io/jasonleewilson/pen/gPrxwX
-    var i = 0; // a counter which is displayed every 100ms
-    var now = new Date();
-    var milli = 000;
-    var elapsed = now - new Date().getTime();
-
-    // create interval which fires the callback every 100ms.
-    // `interval` holds the interval ID, which is later used to clear the
-    // interval (stop calling the callback)
-    var interval = setInterval(function () {
-
-        display.innerHTML = i++ + "," + milli++ + elapsed; // write `i` and increment
-
-        // if `i` is grater than 15 seconds then clear the interval (stop calling the callback)
-        if (i > 15) clearInterval(interval);
-    }, 1000);
-
+function stopGame() {
+    const resultspan = document.getElementById("resultplaceholder");
+    if (gameIsWon()) {
+        resultspan.innerHTML = `Well done - you won!<br>Your result was ${Math.abs(elapsedTime - goal).toFixed(3)} seconds from the goal`;
+        resultspan.style.color = "green";
+    } else {
+        resultspan.innerHTML = `Too bad - you were too slow.<br>Your result was ${Math.abs(elapsedTime - goal).toFixed(3)} seconds from the goal`;
+        resultspan.style.color = "#900000";
+    }
 }
 
-function stopTimer() {
-
-}
-
-function checkScore() {
-
+function gameIsWon() {
+    return elapsedTime - goal <= 0.2 && elapsedTime - goal >= -0.2;
 }
 
 function resetGame() {
-
+    console.log("reset");
+    const resultspan = document.getElementById("resultplaceholder");
+    resultspan.innerHTML = "Remember to release it on time!";
+    resultspan.style.color = "#900000";
+    setGoal();
 }
