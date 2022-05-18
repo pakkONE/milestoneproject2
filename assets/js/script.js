@@ -9,33 +9,37 @@ let timer = {
 
 // event listeners
 
+window.onload = (event) => {
+    setGoal();
+};
+
+
 document.addEventListener('keydown',
     spaceBarDown);
-// if (event.spaceBarDown)
-// runTimer();
+
 
 document.addEventListener('keyup', spaceBarUp);
-// if (event.spaceBarUp)
-// stopTimer();
 
-// Defining all functions that are needed for the game
 
 function setGoal() {
+    const goal = getRandomNumber();
+    let timeGoal = document.getElementById("timegoal");
+    timeGoal.innerHTML = goal;
+}
 
+
+function getRandomNumber() {
+    return Math.floor((Math.random() * (12 - 4) + 4) * 1000) / 1000;
 }
 
 function spaceBarDown(event) {
     if (event.code === 'Space') {
         if (spaceBarIsDown == true) {
-            // console.log("If spaceBarisDown is true, do nothing!")
             return;
         } else {
             spaceBarIsDown = true;
-            // console.log("spacebar is down!")
             runTimer();
         }
-        // console.log(event);
-        // console.log('spacebar is down!');
     }
 }
 
@@ -43,7 +47,6 @@ function spaceBarUp(event) {
     if (event.code === 'Space') {
         if (spaceBarIsDown == true) {
             spaceBarIsDown = false;
-            // stopTimer();
         }
         console.log('spacebar is up!')
     } else {
