@@ -32,19 +32,25 @@
             Press and hold down the space key to begin...
         </div>
         <div id="goal">
-            Your goal is <span id="timegoal">0,000</span> seconds.
+            Your goal is <span id="timegoal">0.000</span> seconds.
         </div>
         <div id="counter">
             Press the space key to start the counter<br>
             <br>
-            <span id="timecounter">0,000</span><br>
+            <span id="timecounter">0.000</span><br>
             <span id="resultplaceholder">Remember to release it on time!</span>
         </div>
         <div id="results">
             Results will be displayed here<br>
-            <br>
+            <ol id="scoreboard">
+                <li class="round" id="round1">0.0</li>
+                <li class="round" id="round2">0.0</li>
+                <li class="round" id="round3">0.0</li>
+                <li class="round" id="round4">0.0</li>
+                <li class="round" id="round5">0.0</li>
+            </ol>
             <span id="resetmessage">Do you want to reset the game? <button id="resetbutton"
-                    onclick="resetGame()" data-type="reset">New Game</button></span>
+                    onclick="newGame()" data-type="reset">New Game</button></span>
         </div>
 
     </section>
