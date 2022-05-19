@@ -83,20 +83,22 @@ function getScore() {
 function endRound() {
     const resultspan = document.getElementById("resultplaceholder");
     if (roundIsWon()) {
-        resultspan.innerHTML = `Well done - you won!<br>Your result was ${getScore()} seconds from the goal`;
+        resultspan.innerHTML = `Well done!<br>Your result was ${getScore()} seconds from the goal`;
         resultspan.style.color = "green";
     } else {
-        resultspan.innerHTML = `Too bad - you were too slow.<br>Your result was ${getScore()} seconds from the goal`;
+        resultspan.innerHTML = `Better luck next time!<br>Your result was ${getScore()} seconds from the goal`;
         resultspan.style.color = "#900000";
     }
     scoreboard.push(getScore());
     setLi(scoreboard.length, roundIsWon() ? "green" : "#900000", getScore());
     if (scoreboard.length === 5) {
         setTimeout(function () {
-            alert("Game over - thank you for playing.");
+            alert("Game is now done - thank you for playing!");
         }, 1000);
     } else {
-        resetRound();
+        setTimeout(function () {
+            resetRound();
+        }, 3000)
     }
 }
 

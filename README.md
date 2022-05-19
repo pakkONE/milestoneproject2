@@ -100,8 +100,31 @@ This game will be for adults and children alike, and it will provide a fun game 
 - JSHint validator<br>
 
 ![Results of JSHint](assets/images/jshint_validator.png)
+- Lighthouse<br>
+
+![Screenshot of results from Lighthouse](assets/images/lighthouse_results.png)
 
 ### __Test cases__
+- Load game
+  - Whenever I refresh the page, it loads the game correctly with a new randomly generated number as a goal.<br>
+  ![Screenshot of testing of the loading of the game](assets/images/testing_goal.png)
+- Start round
+  - I tested pressing any key other than space key and it doesn't start the round.
+  - When I press and hold down space key the time counter starts counting up.<br>
+  ![Screenshot of testing of pressing down the space key](assets/images/testing_keydown.png)
+- End round
+  - I tested releasing the space key as close as possible to the goal and it worked, the counter stopped and result was calculated.
+  - I tested holding the space key down longer than the goal and it stopped at 15 seconds which I wanted it to since the goal will never be more than 12 seconds.<br>
+  ![Screenshot of testing of the time limit of 15 seconds](assets/images/testing_limit.png)
+- End game
+  - I tested finishing five rounds to see if the game was ending on its own and displaying the alert, which it did.<br>
+  ![Screenshot of testing of finishing the game and seeing the alert message](assets/images/testing_alert.png)
+- Reset game / "New Game" button
+  - I tested the New Game button after 1, 2, 3 and 4 rounds and it worked, the game was reset and a new randomly generated time goal was set.<br>
+  ![Screenshot of testing of the New Game button](assets/images/testing_new_game.png)
+- Footer / Facebook icon
+  - I tested clicking on the Facebook icon and it opened the Facebook website in a new tab.<br>
+  ![Screenshot of testing of the footer Facebook icon](assets/images/testing_footer.png)
 
 ### __Fixed bugs__
  - Expected: The alert message should have been displayed after the result of the last round had been calculated and the last results box was made either green/red.
@@ -114,6 +137,8 @@ This game will be for adults and children alike, and it will provide a fun game 
    - I solved it by adding `` flex-wrap: wrap; `` to the CSS code for that section.
 
 ### __Supported screens and browsers__
+- It has been tested on Safari, Brave Browser, Google Chrome, Mozilla Firefox and Microsoft Edge and works well.
+- It has also been tried on Safari on iPad as well as iPhone with a bluetooth keyboard connected and works well.
 
 ## Deployment
 <hr>
@@ -137,20 +162,8 @@ Find my site here: https://pakkone.github.io/milestoneproject2/
 ## Credits
 <hr>
 
-#### function runTimer
-- ```function runTimer() {
-  var i = 0; // a counter which is displayed every 100ms
+#### HTML/CSS code
+- I got my freshly reminders of HTML/CSS code from [W3Schools](https://www.w3schools.com/).
 
-   // create interval which fires the callback every 100ms.
-   // `interval` holds the interval ID, which is later used to clear the
-   // interval (stop calling the callback)
-  var interval = setInterval(function() { 
-
-    text.innerHTML = i++; // write `i` and increment
-    
-    // if `i` is grater than 100 then clear the interval (stop calling the callback)
-    if (i > 100) clearInterval(interval);
-  }, 100);
-
-
-- Borrowed from user @ Stack Overflow [Sebastian Kaczmarek](https://stackoverflow.com/a/58652144)
+#### JavaScript code
+- My friend [David Hyldgaard](https://www.linkedin.com/in/davidhyldgaard) helped me map out how I should use the functions.
