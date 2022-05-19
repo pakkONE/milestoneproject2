@@ -21,6 +21,18 @@ This game will be for adults and children alike, and it will provide a fun game 
    - Dependant of the result (a margin of 0,2 seconds) will display the counter with a green background if user succeeds or a red background if the user doesn't succeed.<br>
    ![Screenshot of the game area](assets/images/game_area.png)
 
+ - #### __Results Area__
+   - Below the time counter results will be displayed to the user.
+   - If you are within 0.2 seconds before or after the goal, you will get a green box with the difference within it.
+   - If you are more than 0.2 seconds before or after the goal, the box will be red with the difference within it.
+   - If the user clicks New Game button the results area will be reset.<br>
+   ![Screenshot of the results area](assets/images/results_area.png)
+  
+ - #### __Alert Message__
+   - After five rounds you will be alerted with a message indicating that the game is now over as well as thanking the user for playing.
+   - The alert has a delay added to it so that the game has enought time to calculate the result of the last round before sending the alert.<br>
+   ![Screenshot of the alert message displayed once five rounds have been played](assets/images/alert_message.png)
+
  - #### __Reset game button__
    - At the bottom of the game area there will be a button to click on if the user would like to reset the game.<br>
    ![Screenshot of the reset game button](assets/images/reset_button.png)
@@ -85,10 +97,21 @@ This game will be for adults and children alike, and it will provide a fun game 
 - CSS validator<br>
 
 ![Results of css validation](assets/images/css_validator.png)
+- JSHint validator<br>
+
+![Results of JSHint](assets/images/jshint_validator.png)
 
 ### __Test cases__
 
 ### __Fixed bugs__
+ - Expected: The alert message should have been displayed after the result of the last round had been calculated and the last results box was made either green/red.
+   - What actually happened was that the last results box was still gray and said "0,000" when the alert message was sent.
+   - This was resolved by using the setTimeout function:  ``setTimeout(function () {
+            alert("Game over - thank you for playing.");
+        }, 1000);``
+ - Expected: The results area should display five boxes with results of your played game.
+   - What actually happened was that the five containers were not wrapping on some smaller screen sizes making them pop outside the div they are a part of.
+   - I solved it by adding `` flex-wrap: wrap; `` to the CSS code for that section.
 
 ### __Supported screens and browsers__
 

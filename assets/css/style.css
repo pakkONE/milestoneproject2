@@ -95,6 +95,7 @@ body {
 
 #scoreboard {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     font-size: 1.8rem;
 }
