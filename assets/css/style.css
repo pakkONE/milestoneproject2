@@ -21,8 +21,9 @@ body {
 
 .logo {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 4rem;
     margin: auto;
+    padding: 0;
 }
 
 /* Styling of Game Area */
@@ -38,7 +39,7 @@ body {
 
 #welcome {
     text-align: center;
-    line-height: 3vh;
+    line-height: 2rem;
     padding: 1rem 5rem;
 }
 
@@ -47,7 +48,7 @@ body {
     width: 40%;
     margin: auto;
     text-align: center;
-    line-height: 3vh;
+    line-height: 2rem;
     padding: 1rem;
     border: 3px groove #5E5E5E;
     border-radius: 10px;
@@ -58,21 +59,21 @@ body {
     width: 40%;
     margin: auto;
     text-align: center;
-    line-height: 3vh;
+    line-height: 2rem;
     padding: 1rem;
     border: 3px groove #5E5E5E;
     border-radius: 10px;
 }
 
 #resultplaceholder {
-    font-size: 1.3vw;
+    font-size: 1.7rem;
     color: #900000;
 }
 
 #timecounter,
 #timegoal {
-    font-size: 3.5vw;
-    margin: 0.75vw;
+    font-size: 4rem;
+    margin: 0.4rem;
 }
 
 #results {
@@ -80,7 +81,7 @@ body {
     width: 40%;
     margin: auto;
     text-align: center;
-    line-height: 3vh;
+    line-height: 2rem;
     padding: 1rem;
     border: 3px groove #5E5E5E;
     border-radius: 10px;
@@ -100,7 +101,7 @@ body {
 }
 
 #resetmessage {
-    font-size: 1.3vw;
+    font-size: 1.7rem;
 }
 
 #resetbutton {
@@ -115,7 +116,7 @@ body {
 }
 
 footer {
-    font-size: 1.5vw;
+    font-size: 2rem;
     text-align: center;
     margin: 20px;
 }
@@ -124,11 +125,11 @@ footer {
 
 @media only screen and (max-width: 1080px) {
     body {
-        font-size: 3vw;
+        font-size: 2.5rem;
     }
 
     .game-area {
-        width: 60%;
+        width: 75%;
         padding: 12.5px;
     }
 
@@ -146,13 +147,13 @@ footer {
 
     #timecounter,
     #timegoal {
-        font-size: 7.5vw;
-        margin: 0.45vw;
+        font-size: 3rem;
+        margin: 0.3rem;
     }
 
     #remember,
     #resetmessage {
-        font-size: 2vw;
+        font-size: 1.4rem;
     }
 }
 
@@ -160,11 +161,11 @@ footer {
 
 @media only screen and (max-width: 650px) {
     body {
-        font-size: 3.5vw;
+        font-size: 2rem;
     }
 
     .game-area {
-        width: 60%;
+        width: 80%;
         padding: 5px;
     }
 
@@ -177,24 +178,24 @@ footer {
     #goal,
     #counter,
     #results {
-        font-size: 5vw;
+        font-size: 2rem;
         width: 70%;
         text-align: center;
-        padding: .5rem;
+        padding: 0.2rem;
     }
 
     #timecounter,
     #timegoal {
-        font-size: 7.5vw;
-        margin: 0.45vw;
+        font-size: 3rem;
+        margin: 0.1rem;
     }
 
     #remember,
     #resetmessage {
-        font-size: 3.5vw;
+        font-size: 1.3rem;
     }
 
     #resetbutton {
-        font-size: 2vw;
+        font-size: 1rem;
     }
 }
